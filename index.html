@@ -12,7 +12,7 @@
   <img src="https://pic.imgdb.cn/item/651fa444c458853aef9ac415.png">
   </a>
   <div>
-   <a href="download">点击下载</a>
+   <a class="download" href="download">点击下载</a>
   </div>
  </body>
 </html>
@@ -26,17 +26,17 @@
  img{
   transform: translate(300px, -100px);
  }
- a{
+ a.download{
   padding: 15px;
   border-radius: 10px;
   background: #A9FFF7;
   transition: all .2s ease;
  }
- a:hover{
+ a.download:hover{
   background: #89FAF0;
   box-shadow: 0px 0px 10px #000;
  }
- a:hover::after{
+ a.download:hover::after{
   content: "(啥也没有)";
   text-decoration: line-through;
   color: #666666;

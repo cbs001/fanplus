@@ -6,31 +6,44 @@
  </head>
  <body>
   <div class="title">
-   <h1>帆++本地评测系统</h1>
+   <h1>&nbsp;帆++本地评测系统</h1>
   </div>
   <a href="https://www.luogu.com.cn/user/756064">
   <img src="https://pic.imgdb.cn/item/651fa444c458853aef9ac415.png">
   </a>
-  <div>
-   <a class="download" href="download">点击下载</a>
+  <div class="card" style="width:250px;">
+   <a>点击下载（开发中，敬请期待）</a>
   </div>
-  <div class="intro">
+  <div class="card">
    <h2>帆++简介</h2>
-   <p>帆++是wyf开发的一款本地评测系统，非常方便。没有网络也能练习题目。</p?
+   <p>帆++是wyf开发的一款本地评测系统，非常方便。没有网络也能练习题目。</p>
+  </div>
+  <div class="card">
+   <h2>更新日志</h2>
+   <p>无</p>
   </div>
  </body>
 </html>
 <style>
+ /*背景*/
+ html > body {
+  margin:0px;
+  background-image: url(https://pic.imgdb.cn/item/651fbe5ac458853aefa6656a.jpg) !important;
+  background-size:100% 100%;
+  background-attachment:fixed;
+ }
  /*题目*/
  .title{ 
   width: 99%;
   background: linear-gradient(to right,#ff00009e,#d0ff00a6,#00fffcad,#0033ffa8,#c800ffb3,#ff0000a1);
-  padding: 10px;
-  border-radius: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: #FFFFFF;
  }
  img{
-  transform: translate(300px, -106px);
-  height:100px;
+  transform: translate(295px, -10px);
+  height:80px;
   transition: all .2s ease;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -38,39 +51,22 @@
   margin-right: 5px;
  }
  img:hover{
-  height:110px;
+  height:90px;
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
  }
- /*下载按钮*/
- a.download {
+ /*卡片*/
+ .card{
   padding: 15px;
   border-radius: 10px;
-  background: linear-gradient(to right,#ff00009e,#d0ff00a6,#00fffcad,#0033ffa8,#c800ffb3,#ff0000a1);
-  transition: all .2s ease;
- }
- a.download:hover{
-  background: linear-gradient(to right,#ff00009e,#d0ff00a6,#00fffcad,#0033ffa8,#c800ffb3,#ff0000a1);
-  box-shadow: 0px 0px 10px #000;
- }
- /*简介*/
- .intro{
-  padding: 15px;
-  border-radius: 10px;
- background: linear-gradient(to right,#ff00009e,#d0ff00a6,#00fffcad,#0033ffa8,#c800ffb3,#ff0000a1);
+  background: #A9FFF7EE;
   margin-top: 30px;
   transition: all .2s ease;
  }
- .intro:hover{
-  background: linear-gradient(to right,#ff00009e,#d0ff00a6,#00fffcad,#0033ffa8,#c800ffb3,#ff0000a1);
+ .card:hover{
+  background: #89FAF0;
   box-shadow: 0px 0px 10px #000;
  }
- html > body {
-  margin:0px;
-  background-image: url(https://pic.imgdb.cn/item/651fbe5ac458853aefa6656a.jpg) !important;
-  background-size:100% 100%;
-  background-attachment:fixed;
-}
 </style>

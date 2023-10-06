@@ -14,19 +14,38 @@
   <div>
    <a class="download" href="download">点击下载</a>
   </div>
+  <div class="intro">
+   <h2>帆++简介</h2>
+   <p>帆++是wyf开发的一款本地评测系统，非常方便。没有网络也能练习题目。</p?
+  </div>
  </body>
 </html>
 <style>
- .title{
+ /*题目*/
+ .title{ 
   width: 99%;
   background: #DEFFE2;
   padding: 10px;
   border-radius: 10px;
  }
  img{
-  transform: translate(300px, -100px);
+  transform: translate(300px, -106px);
+  height:100px;
+  transition: all .2s ease;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
  }
- a.download{
+ img:hover{
+  height:110px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+ }
+ /*下载按钮*/
+ a.download {
   padding: 15px;
   border-radius: 10px;
   background: #A9FFF7;
@@ -36,9 +55,16 @@
   background: #89FAF0;
   box-shadow: 0px 0px 10px #000;
  }
- a.download:hover::after{
-  content: "(啥也没有)";
-  text-decoration: line-through;
-  color: #666666;
+ /*简介*/
+ .intro{
+  padding: 15px;
+  border-radius: 10px;
+  background: #A9FFF7;
+  margin-top: 30px;
+  transition: all .2s ease;
+ }
+ .intro:hover{
+  background: #89FAF0;
+  box-shadow: 0px 0px 10px #000;
  }
 </style>

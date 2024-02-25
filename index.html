@@ -132,6 +132,20 @@
 				<p>控制面板 > 系统和安全 > 系统 > 高级系统设置 > 环境变量 > 系统变量 > Path</p>
 			</div>
 		</div>
+		<div class="card">
+			<h3>常见问题</h2>
+			<p>
+				1.对于v0.5.0，启动时提示“无法启动此程序，因为计算机中丢失***.dll”<br>
+				这种情况，直接在<a href="https://www.123pan.com/s/Qau7Vv-509I">这个云盘链接</a>下载对应的dll即可
+			</p>
+			<p>
+				2.评测时无法正常编译<br>
+				先在第一题的链接中，安装devc++。然后将含有g++的那个文件夹添加到环境目录，就可以了。<br>
+				自行检查一下，在cmd里输入g++，如果显示出：<br>
+				'g++' 不是内部或外部命令，也不是可运行的程序或批处理文件。<br>
+				就说明没有设置环境目录。
+			</p>
+		</div>
 	</body>
 </html>
 <style>
@@ -190,8 +204,11 @@
 		display: flex;
 	}
 	a{
-		color:black;
+		color:red;
 		text-decoration:none;
+	}
+	.minicard>a, .author>a{
+		color:black !important;
 	}
 	/*横栏*/
 	.line{

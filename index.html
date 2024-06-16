@@ -1,244 +1,167 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh">
 	<link rel="shortcut icon" href="https://pic.imgdb.cn/item/651fa444c458853aef9ac415.png">
 	<head>
-		<meta charset="UTF-8">
-		<meta name="keywords" content="F++,本地评测机">
-		<title>Fpp Judge Download</title>
-		<!-- 下滑时，标题栏自动出现阴影 --><script>window.onscroll=function(){let tmp = document.getElementsByClassName("title");if(window.scrollY>30)tmp[0].style.boxShadow="0px 0px 15px #000";else tmp[0].style.boxShadow="0px 0px 0px #000";};</script>
-		<script>
-			function show(){
-				let tmp = document.getElementById("update");
-				let tmp2 = document.getElementById("update-button");
-				if(tmp.style.display == "none"){
-					tmp.style.display = "block";
-					tmp2.innerText = "收起";
-				}else{
-					tmp.style.display = "none";
-					tmp2.innerText = "展开";
-				}
-			}
-		</script>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="blog-uid" content="756064">
+		<meta name="blog-name" content="Welcome">
+		<meta name="current-user" content="">
+		<title>文章列表 - Welcome - Fan博客</title>
+		<link rel="stylesheet" href="https://www.luogu.com.cn/static/blog/ant/katex.css">
+		<link rel="stylesheet" href="https://www.luogu.com.cn/static/blog/ant/common.css">
 	</head>
 	<body>
-		<div class="title">
-			<h1>&nbsp;Fpp Judge</h1>
-			<a href="https://www.luogu.com.cn/user/756064"><img src="https://pic.imgdb.cn/item/651fa444c458853aef9ac415.png"></a>
-			<div>
-				<a href="https://blog.fanplus.top" style="color:black">博客</a>
-			</div>
-		</div>
-		<div style="height:75px"></div>
-		<div class="line">
-			<div class="card" style="width:150px">
-				<h3>v0.3.1_1015</h3>
-				<div style="display: flex">
-					<div class="minicard"><a href="F++.7z">github(7z)</a></div>
+		<main>
+			<div class="ant-row-flex ant-row-flex-center"style="background: rgb(236, 236, 236); padding: 30px; min-height: 100vh;">
+				<div class="authorinfo-padding ant-col ant-col-8">
+					<div class="ant-card ant-card-bordered" style="width: 100%;">
+						<div class="ant-card-body">
+							<div class="ant-row-flex ant-row-flex-center">
+								<div class="ant-col">
+									<div class="author-title">
+									<span class="avatar-left ant-avatar ant-avatar-circle ant-avatar-image" style="width: 96px; height: 96px; line-height: 96px; font-size: 18px;">
+										<img src="https://cdn.luogu.com.cn/upload/usericon/756064.png">
+									</span>
+									<h3 class="text-center blog-name">Welcome</h3><!--简介改这里-->
+									<h4 class="text-center">我们来自浙江温州</h4>
+									<h4 class="text center">这里是 Fanplus 工作室的博客</h4>
+								</div>
+								<div role="separator" class="ant-divider ant-divider-horizontal ant-divider-dashed"></div>
+								<div>
+									<ul role="menu" class="menu ant-menu ant-menu-vertical ant-menu-root ant-menu-light">
+										<li role="menuitem" class="ant-menu-item">
+											<i aria-label="icon: tag" class="anticon anticon-tag">
+												<svg viewBox="64 64 896 896" data-icon="tag" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false" class="">
+													<path d="M938 458.8l-29.6-312.6c-1.5-16.2-14.4-29-30.6-30.6L565.2 86h-.4c-3.2 0-5.7 1-7.6 2.9L88.9 557.2a9.96 9.96 0 0 0 0 14.1l363.8 363.8c1.9 1.9 4.4 2.9 7.1 2.9s5.2-1 7.1-2.9l468.3-468.3c2-2.1 3-5 2.8-8zM459.7 834.7L189.3 564.3 589 164.6 836 188l23.4 247-399.7 399.7zM680 256c-48.5 0-88 39.5-88 88s39.5 88 88 88 88-39.5 88-88-39.5-88-88-88zm0 120c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z">
+													</path>
+												</svg>
+											</i>所有类型
+										</li>
+									</ul>
+								</div>
+								<div role="separator" class="ant-divider ant-divider-horizontal ant-divider-dashed"></div>
+								<span class="input-search ant-input-search ant-input-affix-wrapper">
+									<input placeholder="input search text" type="text" class="ant-input">
+									<span class="ant-input-suffix">
+										<i aria-label="icon: search" tabindex="-1" class="anticon anticon-search ant-input-search-icon">
+											<svg viewBox="64 64 896 896" data-icon="search" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false" class="">
+												<path d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"></path>
+											</svg>
+										</i>
+									</span>
+								</span>
+								<div role="separator" class="ant-divider ant-divider-horizontal ant-divider-dashed"></div>
+								<div class="footer-info"><!--友链在这里-->
+									<div class="text-center">
+										<a href="https://www.luogu.com.cn/" class="item">Luogu</a>
+										<div role="separator" class="ant-divider ant-divider-vertical"></div>
+										<a href="https://wzoi.cc/" class="item">WZOI</a>
+										<div role="separator" class="ant-divider ant-divider-vertical"></div>
+										<a href="https://github.com/" class="item">GitHub</a>
+										<div role="separator" class="ant-divider ant-divider-vertical"></div>
+										<a href="https://loj.ac/" class="item">loj</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="card" style="width:150px;margin-left:10px;">
-				<h3>v0.4.7_1203</h3>
-				<div style="display: flex">
-					<div class="minicard"><a href="fpp1203 正式版.7z">github(7z)</a></div>
+			<div class="ant-col ant-col-16" style="padding-left: 16px;">
+				<div class="article-body-top ant-card ant-card-bordered" style="width: 100%;">
+					<div class="ant-card-head"><div class="ant-card-head-wrapper">
+						<div class="ant-card-head-title">文章 (3)</div>
+					</div>
+				</div>
+				<div class="ant-card-body">
+					<p>
+						<div class="ant-list ant-list-split">
+							<div class="ant-spin-nested-loading">
+								<div class="ant-spin-container">
+									<!-- <div class="ant-list-empty-text">
+										<div class="ant-empty ant-empty-normal">
+											<div class="ant-empty-image">
+												<svg width="64" height="41" viewBox="0 0 64 41" xmlns="http://www.w3.org/2000/svg">
+													<g transform="translate(0 1)" fill="none" fillRule="evenodd">
+														<ellipse fill="#F5F5F5" cx="32" cy="33" rx="32" ry="7"></ellipse>
+													<g fillRule="nonzero" stroke="#D9D9D9">
+														<path d="M55 12.76L44.854 1.258C44.367.474 43.656 0 42.907 0H21.093c-.749 0-1.46.474-1.947 1.257L9 12.761V22h46v-9.24z"></path>
+														<path d="M41.613 15.931c0-1.605.994-2.93 2.227-2.931H55v18.137C55 33.26 53.68 35 52.05 35h-40.1C10.32 35 9 33.259 9 31.137V13h11.16c1.233 0 2.227 1.323 2.227 2.928v.022c0 1.605 1.005 2.901 2.237 2.901h14.752c1.232 0 2.237-1.308 2.237-2.913v-.007z" fill="#FAFAFA"></path></g></g></svg></div><p class="ant-empty-description">No Data</p>
+											</div>
+										</div>
+									</div> 空的用这段 empty标识 -->
+									<ul class="ant-list-items">
+										<li class="ant-list-item">
+											<div class="ant-col">
+												<h4 class="ant-list-item-meta-title">
+													<a href="https://fanplus.top"style="font-weight: bold;">主页</a>
+												</h4>
+													<div class="ant-list-item-meta-description">														<span class="ant-tag">主页</span>
+												</div>
+												<div class="article-content ant-row">这里是 Fanplusplus 的宣传主页！</div>
+												<div class="ant-row">
+													<a href="https://www.luogu.com.cn/user/756064">wyf1202</a>
+													<span class="inline-padding">发布于</span>
+													<span class="text-grey">2024-02-19 16:04:51</span>
+												</div>
+											</div>
+										</li>
+									</ul><!--第1个blog-->
+									<ul class="ant-list-items">
+										<li class="ant-list-item">
+											<div class="ant-col">
+												<h4 class="ant-list-item-meta-title">
+													<a href="https://www.123pan.com/s/tGvyjv-GCSgv.html" style="font-weight: bold;">ffmpeg Download</a>
+												</h4>
+												<div class="ant-list-item-meta-description">
+													<span class="ant-tag">软件</span>
+												</div>
+												<div class="article-content ant-row">这里是 ffmpeg 的高速下载链接！</div>
+												<div class="ant-row">
+													<a href="https://www.luogu.com.cn/user/756064">wyf1202</a>
+													<span class="inline-padding">发布于</span>
+													<span class="text-grey">2024-03-08 16:27:43</span>
+												</div>
+											</div>
+										</li>
+									</ul><!--第2个blog-->
+									<ul class="ant-list-items">
+										<li class="ant-list-item">
+											<div class="ant-col">
+												<h4 class="ant-list-item-meta-title">
+													<a href="https://wwp.lanzouo.com/icwcj0kw6uyd" style="font-weight: bold;">Embarcadero Dev-C++ Download</a>
+												</h4>
+												<div class="ant-list-item-meta-description">
+													<span class="ant-tag">软件</span>
+												</div>
+												<div class="article-content ant-row">这里是 Embarcadero Dev-C++ 的蓝奏云高速下载链接！密码:6b46</div>
+												<div class="ant-row">
+													<a href="https://www.luogu.com.cn/user/756064">wyf1202</a>
+													<span class="inline-padding">发布于</span>
+													<span class="text-grey">2023-01-13 XX:XX:XX</span>
+												</div>
+											</div>
+										</li>
+									</ul><!--第3个blog-->
+								</div>
+							</div>
+						</div>
+					</p>
+					<div role="separator" class="ant-divider ant-divider-horizontal"></div>
 				</div>
 			</div>
-			<div class="card" style="width:250px;margin-left:10px;">
-				<h3>v0.5.0_0218</h3>
-				<div style="display: flex">
-					<div class="minicard"><a href="https://www.123pan.com/s/Qau7Vv-2n9I.html">123云盘(zip)</a></div>
-					<div class="minicard" style="margin-left:10px;"><a href="https://pan.baidu.com/s/1XeiQdYhx2cUiPiSfuLj_Tg?pwd=5u5p">百度网盘(zip)</a></div>
-				</div>
-			</div>
-			<div class="card" style="width:300px;margin-left:10px;">
-				<h3>v0.5.2_0316</h3>
-				<div style="display: flex">
-					<div class="minicard"><a href="https://www.123pan.com/s/Qau7Vv-lHQI.html">123云盘(nodata,zip)</a></div>
-					<div class="minicard" style="margin-left:10px;"><a href="https://www.123pan.com/s/Qau7Vv-7HQI.html">123云盘(zip)</a></div>
-				</div>
-			</div>
-		</div>
-		<div class="card">
-			<h3>Fpp简介</h3>
-			<p>全称Fanplusplus Judge，是由 wyf1202 立项，与 chenbs、wanganze 等人协同开发的一款本地评测系统，非常方便，没有网络也能练习题目。</p>
-		</div>
-		<div class="card">
-			<div style="display:flex">
-				<h3>更新日志</h3>
-				<button id="update-button" style="margin-left:10px" onclick="show();">展开</button>
-			</div>
-			<div id="update" style="display:none">
-				<p>20231001 Fpp立项，全新评测系统即将发布，敬请期待！</p>
-				<p>20231015 Fpp开启内测，可初步评测，版本号v0.3.1</p>
-				<p>20231026 Fpp新增多道经典题目，废除freopen评测，版本号v0.3.4<p>
-				<p>20231105 Fpp新增样例，增加内存检测，版本号v0.3.5</p>
-				<p>20231106 Fpp采用全新图形化界面，体验大幅提升，版本号v0.4.0</p>
-				<p>20231110 Fpp采用cbs制作新logo，版本号v0.4.1</p>
-				<p>20231111 Fpp采用高精度时钟，解决评测窗口未响应bug，版本号v0.4.2</p>
-				<p>20231117 Fpp采用新文本框，使题目内容可以复制，版本号v0.4.3</p>
-				<p>20231119 Fpp页面滑动闪烁bug解决，版本号v0.4.4</p>
-				<p>20231122 Fpp新增CSP-J 2019题目，修整主页UI，版本号v0.4.5</p>
-				<p>20231125 Fpp题目页面显示时间空间限制，版本号v0.4.6</p>
-				<p>20231202 Fpp优化全屏显示UI，版本号v0.4.7</p>
-				<p>20231203 Fpp参考WZOI Judge，提升评测效率，版本号v0.4.7</p>
-				<p>20231217 Fpp增加翻页按钮，为新增题库做准备，版本号v0.4.8</p>
-				<p>20231224 Fpp增加代码提交框，替代之前的code.cpp，版本号v0.4.8</p>
-				<p>20240114 Fpp开发组对新域名进行紧张的讨论，为本网站作铺垫</p>
-				<p>20240119 Fpp将高dpi显示器显示模糊的bug彻底解决，版本号v0.4.9</p>
-				<p>20240120 Fpp参考WZOI比较函数，加入数据结构模板题，版本号v0.4.9</p>
-				<p>20240218 Fpp提升评测稳定性，优化大量UI，在Win8成功运行，版本号v0.5.0</p>
-				<p>20240218 Fpp新增许多题目，版本号v0.5.2</p>
-			</div>
-		</div>
-		<div class="card">
-			<h3>独立数据下载</h3>
-			<a href="https://cbs-and-js.lanzoum.com/b03rl084j">
-				蓝奏云（密码aowz）
-			</a>
-		</div>
-		<div class="card">
-			<h3>开发组（排名不分先后）</h3>
-			<div class="author">
-				<a href="https://www.luogu.com.cn/user/756064">
-					<div class="minicard" style="width:130px; display:flex"> wyf1202
-						<div style="transform:translate(5px,3px);">
-							<!-- 图标来源于洛谷 -->
-							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0,0,512,512"><g transform="translate(16,76)"><g data-paper-data="{&quot;isPaintingLayer&quot;:true}" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" style="mix-blend-mode: normal"><path d="M240,-76c36.8,0 68.8,20.7 84.9,51.1c32.9,-10.1 70.1,-2.1 96.1,23.9c26,26 34,63.3 23.9,96.1c30.4,16.1 51.1,48.1 51.1,84.9c0,36.8 -20.7,68.8 -51.1,84.9c10.1,32.9 2.1,70.1 -23.9,96.1c-26,26 -63.3,34 -96.1,23.9c-16.1,30.4 -48.1,51.1 -84.9,51.1c-36.8,0 -68.8,-20.7 -84.9,-51.1c-32.9,10.1 -70.1,2.1 -96.1,-23.9c-26,-26 -34,-63.3 -23.9,-96.1c-30.4,-16.1 -51.1,-48.1 -51.1,-84.9c0,-36.8 20.7,-68.8 51.1,-84.9c-10.1,-32.9 -2.1,-70.1 23.9,-96.1c26,-26 63.3,-34 96.1,-23.9c16.1,-30.4 48.1,-51.1 84.9,-51.1zM353,133c9.4,-9.4 9.4,-24.6 0,-33.9c-9.4,-9.3 -24.6,-9.4 -33.9,0l-111,111l-47,-47c-9.4,-9.4 -24.6,-9.4 -33.9,0c-9.3,9.4 -9.4,24.6 0,33.9l64,64c9.4,9.4 24.6,9.4 33.9,0z" fill="#52c41a"/><path d="M352.95,99c9.4,9.4 9.4,24.6 0,33.9l-128,128.1c-9.4,9.4 -24.6,9.4 -33.9,0l-64,-64c-9.4,-9.4 -9.4,-24.6 0,-33.9c9.4,-9.3 24.6,-9.4 33.9,0l47,47l111,-111.1c9.4,-9.4 24.6,-9.4 33.9,0z" fill="#ffffff"/></g></g></svg>
-						</div>
-					</div>
-				</a>
-				<a href="https://www.luogu.com.cn/user/766573" style="margin-left:10px">
-					<div class="minicard" style="width:130px; display:flex"> chenbs
-						<div style="transform:translate(5px,3px);">
-							<!-- 图标来源于洛谷 -->
-							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0,0,512,512"><g transform="translate(16,76)"><g data-paper-data="{&quot;isPaintingLayer&quot;:true}" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" style="mix-blend-mode: normal"><path d="M240,-76c36.8,0 68.8,20.7 84.9,51.1c32.9,-10.1 70.1,-2.1 96.1,23.9c26,26 34,63.3 23.9,96.1c30.4,16.1 51.1,48.1 51.1,84.9c0,36.8 -20.7,68.8 -51.1,84.9c10.1,32.9 2.1,70.1 -23.9,96.1c-26,26 -63.3,34 -96.1,23.9c-16.1,30.4 -48.1,51.1 -84.9,51.1c-36.8,0 -68.8,-20.7 -84.9,-51.1c-32.9,10.1 -70.1,2.1 -96.1,-23.9c-26,-26 -34,-63.3 -23.9,-96.1c-30.4,-16.1 -51.1,-48.1 -51.1,-84.9c0,-36.8 20.7,-68.8 51.1,-84.9c-10.1,-32.9 -2.1,-70.1 23.9,-96.1c26,-26 63.3,-34 96.1,-23.9c16.1,-30.4 48.1,-51.1 84.9,-51.1zM353,133c9.4,-9.4 9.4,-24.6 0,-33.9c-9.4,-9.3 -24.6,-9.4 -33.9,0l-111,111l-47,-47c-9.4,-9.4 -24.6,-9.4 -33.9,0c-9.3,9.4 -9.4,24.6 0,33.9l64,64c9.4,9.4 24.6,9.4 33.9,0z" fill="#52c41a"/><path d="M352.95,99c9.4,9.4 9.4,24.6 0,33.9l-128,128.1c-9.4,9.4 -24.6,9.4 -33.9,0l-64,-64c-9.4,-9.4 -9.4,-24.6 0,-33.9c9.4,-9.3 24.6,-9.4 33.9,0l47,47l111,-111.1c9.4,-9.4 24.6,-9.4 33.9,0z" fill="#ffffff"/></g></g></svg>
-						</div>
-					</div>
-				</a>
-				<a href="https://www.luogu.com.cn/user/759765" style="margin-left:10px">
-					<div class="minicard" style="width:130px; display:flex"> jinzihan0127
-						<div style="transform:translate(5px,3px);">
-							<!-- 图标来源于洛谷 -->
-							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0,0,512,512"><g transform="translate(16,76)"><g data-paper-data="{&quot;isPaintingLayer&quot;:true}" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" style="mix-blend-mode: normal"><path d="M240,-76c36.8,0 68.8,20.7 84.9,51.1c32.9,-10.1 70.1,-2.1 96.1,23.9c26,26 34,63.3 23.9,96.1c30.4,16.1 51.1,48.1 51.1,84.9c0,36.8 -20.7,68.8 -51.1,84.9c10.1,32.9 2.1,70.1 -23.9,96.1c-26,26 -63.3,34 -96.1,23.9c-16.1,30.4 -48.1,51.1 -84.9,51.1c-36.8,0 -68.8,-20.7 -84.9,-51.1c-32.9,10.1 -70.1,2.1 -96.1,-23.9c-26,-26 -34,-63.3 -23.9,-96.1c-30.4,-16.1 -51.1,-48.1 -51.1,-84.9c0,-36.8 20.7,-68.8 51.1,-84.9c-10.1,-32.9 -2.1,-70.1 23.9,-96.1c26,-26 63.3,-34 96.1,-23.9c16.1,-30.4 48.1,-51.1 84.9,-51.1zM353,133c9.4,-9.4 9.4,-24.6 0,-33.9c-9.4,-9.3 -24.6,-9.4 -33.9,0l-111,111l-47,-47c-9.4,-9.4 -24.6,-9.4 -33.9,0c-9.3,9.4 -9.4,24.6 0,33.9l64,64c9.4,9.4 24.6,9.4 33.9,0z" fill="#52c41a"/><path d="M352.95,99c9.4,9.4 9.4,24.6 0,33.9l-128,128.1c-9.4,9.4 -24.6,9.4 -33.9,0l-64,-64c-9.4,-9.4 -9.4,-24.6 0,-33.9c9.4,-9.3 24.6,-9.4 33.9,0l47,47l111,-111.1c9.4,-9.4 24.6,-9.4 33.9,0z" fill="#ffffff"/></g></g></svg>
-						</div>
-					</div>
-				</a>
-				<a href="https://www.luogu.com.cn/user/841039" style="margin-left:10px">
-					<div class="minicard" style="width:130px; display:flex"> wanganze
-						<div style="transform:translate(5px,3px);">
-							<!-- 图标来源于洛谷 -->
-							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0,0,512,512"><g transform="translate(16,76)"><g data-paper-data="{&quot;isPaintingLayer&quot;:true}" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" style="mix-blend-mode: normal"><path d="M240,-76c36.8,0 68.8,20.7 84.9,51.1c32.9,-10.1 70.1,-2.1 96.1,23.9c26,26 34,63.3 23.9,96.1c30.4,16.1 51.1,48.1 51.1,84.9c0,36.8 -20.7,68.8 -51.1,84.9c10.1,32.9 2.1,70.1 -23.9,96.1c-26,26 -63.3,34 -96.1,23.9c-16.1,30.4 -48.1,51.1 -84.9,51.1c-36.8,0 -68.8,-20.7 -84.9,-51.1c-32.9,10.1 -70.1,2.1 -96.1,-23.9c-26,-26 -34,-63.3 -23.9,-96.1c-30.4,-16.1 -51.1,-48.1 -51.1,-84.9c0,-36.8 20.7,-68.8 51.1,-84.9c-10.1,-32.9 -2.1,-70.1 23.9,-96.1c26,-26 63.3,-34 96.1,-23.9c16.1,-30.4 48.1,-51.1 84.9,-51.1zM353,133c9.4,-9.4 9.4,-24.6 0,-33.9c-9.4,-9.3 -24.6,-9.4 -33.9,0l-111,111l-47,-47c-9.4,-9.4 -24.6,-9.4 -33.9,0c-9.3,9.4 -9.4,24.6 0,33.9l64,64c9.4,9.4 24.6,9.4 33.9,0z" fill="#3498db"/><path d="M352.95,99c9.4,9.4 9.4,24.6 0,33.9l-128,128.1c-9.4,9.4 -24.6,9.4 -33.9,0l-64,-64c-9.4,-9.4 -9.4,-24.6 0,-33.9c9.4,-9.3 24.6,-9.4 33.9,0l47,47l111,-111.1c9.4,-9.4 24.6,-9.4 33.9,0z" fill="#ffffff"/></g></g></svg>
-						</div>
-					</div>
-				</a>
-				<a href="https://www.luogu.com.cn/user/731681" style="margin-left:10px">
-					<div class="minicard" style="width:130px; display:flex"> lg4927618350
-						<div style="transform:translate(5px,3px);">
-							<!-- 图标来源于洛谷 -->
-							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0,0,512,512"><g transform="translate(16,76)"><g data-paper-data="{&quot;isPaintingLayer&quot;:true}" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" style="mix-blend-mode: normal"><path d="M240,-76c36.8,0 68.8,20.7 84.9,51.1c32.9,-10.1 70.1,-2.1 96.1,23.9c26,26 34,63.3 23.9,96.1c30.4,16.1 51.1,48.1 51.1,84.9c0,36.8 -20.7,68.8 -51.1,84.9c10.1,32.9 2.1,70.1 -23.9,96.1c-26,26 -63.3,34 -96.1,23.9c-16.1,30.4 -48.1,51.1 -84.9,51.1c-36.8,0 -68.8,-20.7 -84.9,-51.1c-32.9,10.1 -70.1,2.1 -96.1,-23.9c-26,-26 -34,-63.3 -23.9,-96.1c-30.4,-16.1 -51.1,-48.1 -51.1,-84.9c0,-36.8 20.7,-68.8 51.1,-84.9c-10.1,-32.9 -2.1,-70.1 23.9,-96.1c26,-26 63.3,-34 96.1,-23.9c16.1,-30.4 48.1,-51.1 84.9,-51.1zM353,133c9.4,-9.4 9.4,-24.6 0,-33.9c-9.4,-9.3 -24.6,-9.4 -33.9,0l-111,111l-47,-47c-9.4,-9.4 -24.6,-9.4 -33.9,0c-9.3,9.4 -9.4,24.6 0,33.9l64,64c9.4,9.4 24.6,9.4 33.9,0z" fill="#3498db"/><path d="M352.95,99c9.4,9.4 9.4,24.6 0,33.9l-128,128.1c-9.4,9.4 -24.6,9.4 -33.9,0l-64,-64c-9.4,-9.4 -9.4,-24.6 0,-33.9c9.4,-9.3 24.6,-9.4 33.9,0l47,47l111,-111.1c9.4,-9.4 24.6,-9.4 33.9,0z" fill="#ffffff"/></g></g></svg>
-						</div>
-					</div>
-				</a>
-			</div>
-		</div>
-		<div class="card">
-			<h3>使用教程</h2>
-			<p>1.将代码放入code.cpp中（0.4.8版本后无需进行此操作）</p>
-			<p>2.运行main.exe并找到相关题目进行评测</p>
-			<p>注：请将g++路径加入环境变量</p>
-			<div class="minicard">
-				<p>控制面板 > 系统和安全 > 系统 > 高级系统设置 > 环境变量 > 系统变量 > Path</p>
-			</div>
-		</div>
-		<div class="card">
-			<h3>常见问题</h2>
-			<p>
-				1.对于v0.5.0，启动时提示“无法启动此程序，因为计算机中丢失***.dll”<br>
-				这种情况，直接在<a href="https://www.123pan.com/s/Qau7Vv-509I">这个云盘链接</a>下载对应的dll即可
-			</p>
-			<p>
-				2.评测时无法正常编译<br>
-				先在第一题的链接中，安装devc++。然后将含有g++的那个文件夹添加到环境目录，就可以了。<br>
-				自行检查一下，在cmd里输入g++，如果显示出：<br>
-				'g++' 不是内部或外部命令，也不是可运行的程序或批处理文件。<br>
-				就说明没有设置环境目录。
-			</p>
-		</div>
+		</main>
+		<script>
+			var BlogGlobals = {
+				blogName: "Welcome",
+				blogUID: 756064,
+				currentUser: 756064,
+				picAddress: 'https://cdn.luogu.com.cn'
+			}
+		</script>
+		<script src="https://www.luogu.com.cn/static/blog/ant/common.js"></script>
+		<script src="https://www.luogu.com.cn/static/blog/ant/article_list.js"></script>
 	</body>
 </html>
-<style>
-	/*背景*/
-	html > body {
-		margin:0px;
-		background-image: url(https://pic.imgdb.cn/item/651fbe5ac458853aefa6656a.jpg) !important;
-		background-size:100% 100%;
-		background-attachment:fixed;
-	}
-	/*题目*/
-	.title{ 
-		width: 100%;
-		background: linear-gradient(to right,#ff0000a1,#d0ff00a1,#00fffca1,#0033ffa1,#c800ffa1,#ff0000a1);
-		position: fixed;
-		top: 0;
-		left: 0;
-		color: #FFFFFF;
-		display: flex;
-	}
-	img{
-		position: fixed;
-		top: 0;
-		left: 200px;
-		height: 80px;
-		margin: 5px;
-		transition: all .2s ease;
-	}
-	.title > div{
-		position: fixed;
-		top: 30px;
-		left: 310px;
-	}
-	img:hover{
-		height:90px;
-		margin: 0px;
- 	}
- 	/*卡片*/
-	.card{
-		padding: 15px;
-		border-radius: 10px;
-		background: #A9FFF7EE;
-		margin-top: 25px;
-		transition: all .2s ease;
-	}
-	.card:hover{
-		background: #89FAF0;
-		box-shadow: 0px 0px 8px #000;
-	}
-	.minicard{
-		padding: 10px;
-		border-radius: 5px;
-		background: #A9FFF7EE;
-		transition: all .2s ease;
-	}
-	.minicard:hover{
-		background: #89FAF0;
-		box-shadow: 0px 0px 8px #000;
-	}
-	/*作者卡片*/
-	.author{
-		display: flex;
-	}
-	a{
-		color:red;
-		text-decoration:none;
-	}
-	.minicard>a, .author>a{
-		color:black !important;
-	}
-	/*横栏*/
-	.line{
-		display: flex;
-	}
-	h2,h3,h4,h5,h6{
-		margin-top: 5px; /* 设置上边距 */
-		margin-bottom: 5px; /* 设置下边距 */
-	}
-</style>

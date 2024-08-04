@@ -1,4 +1,3 @@
-
 <html>
 	<link rel="shortcut icon" href="https://pic.imgdb.cn/item/651fa444c458853aef9ac415.png">
 	<head>
@@ -24,8 +23,11 @@
 		<div class="title">
 			<h1>&nbsp;Fpp Judge</h1>
 			<a href="https://www.luogu.com.cn/user/756064"><img src="https://pic.imgdb.cn/item/651fa444c458853aef9ac415.png"></a>
-			<div>
+			<div class="titlecard">
 				<a href="https://blog.fanplus.top" style="color:black">博客</a>
+			</div>
+			<div class="titlecard" style="margin-left:100px ">
+				<a href="http://pan.fanplus.top" style="color:black">云盘</a>
 			</div>
 		</div>
 		<div style="height:75px"></div>
@@ -247,7 +249,7 @@
 	}
 	.title > div{
 		position: fixed;
-		top: 30px;
+		top: 20px;
 		left: 310px;
 	}
 	img:hover{
@@ -255,12 +257,14 @@
 		margin: 0px;
  	}
  	/*卡片*/
-	.card{
+	.card,.titlecard{
 		padding: 15px;
 		border-radius: 10px;
 		background: #A9FFF7EE;
-		margin-top: 25px;
 		transition: all .2s ease;
+	}
+	.card{
+		margin-top: 25px;
 	}
 	.card:hover{
 		background: #89FAF0;
